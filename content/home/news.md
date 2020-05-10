@@ -16,6 +16,8 @@ weight = 6
 
 ## **Recent**
 
+*9.5.20* FINALLY managed to find the time to fix the permissions on the website, I'm back! 
+
 *15.7.19* I wrote an [editorial](https://www.mitpressjournals.org/doi/full/10.1162/netn_e_00096) to cap the [Focus Feature on Topological Neuroscience](https://www.mitpressjournals.org/toc/netn/3/3) in the journal Network Neuroscience. Go have a look, there are quite a few interesting contributions!
 
 *21.5.19* I visited the [brain Dynamics Lab](http://web.stanford.edu/group/bdl/index.html) at Stanford to work with these great folks and give a short crash course on TDA. 
