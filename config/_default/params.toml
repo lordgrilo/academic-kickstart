@@ -18,11 +18,11 @@ day_night = true
 #   Latest font sets (may require updating): https://sourcethemes.com/academic/themes/
 #   Browse built-in font sets in `themes/academic/data/fonts/`
 #   Browse user installed font sets in `data/fonts/`
-font = ""
+font = "default"
 
 # Choose a font size.
 # Sizes: XS (extra small), S (small), M (medium), L (large - DEFAULT), XL (extra large)
-font_size = "L"
+font_size = "M"
 
 ############################
 ## Basic Info
@@ -58,7 +58,7 @@ highlight_languages = ["r"]  # Add support for highlighting additional languages
 
 # Enable LaTeX math rendering? true/false
 #   If false, you can enable math on a per page basis as needed.
-math = false
+math = true
 
 # Enable diagram rendering? true/false
 #   If false, you can enable diagrams on a per page basis as needed.
@@ -81,34 +81,34 @@ edit_page = {repo_url = "https://github.com/gcushen/hugo-academic", content_dir 
 ############################
 
 # Enter contact details (optional). To hide a field, clear it to "".
-email = "test@example.org"
-phone = "888 888 88 88"
+email = "giovanni.petri@isi.it"
+phone = "+39 011 6603090"
 
 # Address
 # For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
-address = {street = "450 Serra Mall", city = "Stanford", region = "CA", postcode = "94305", country = "United States", country_code = "US"}
+address = {street = "Via Chisola 5", city = "Torino", region = "TO", postcode = "10121", country = "Italy", country_code = "IT"}
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
-coordinates = {latitude = "37.4275", longitude = "-122.1697"}
+coordinates = {latitude = "45.040890", longitude = "7.668995"}
 
 # Directions for visitors to locate you.
-directions = "Enter Building 1 and take the stairs to Office 200 on Floor 2"
+directions = "Floor 3"
 
 # Office hours
 # A list of your office hours. To remove, set to an empty list `[]`.
-office_hours = ["Monday 10:00 to 13:00", "Wednesday 09:00 to 10:00"]
+office_hours = []
 
 # Enter an optional link for booking appointments (e.g. calendly.com).
-appointment_url = "https://calendly.com"
+appointment_url = "#https://calendly.com"
 
 # Contact links
 #   Set to `[]` to disable, or comment out unwanted lines with a hash `#`.
 contact_links = [
-  {icon = "twitter", icon_pack = "fab", name = "DM Me", link = "https://twitter.com/Twitter"},
-  {icon = "skype", icon_pack = "fab", name = "Skype Me", link = "skype:echo123?call"},
-  {icon = "keybase", icon_pack = "fab", name = "Chat on Keybase", link = "https://keybase.io/"},
-  {icon = "comments", icon_pack = "fas", name = "Discuss on Forum", link = "https://discourse.gohugo.io"},
+  {icon = "twitter", icon_pack = "fab", name = "DM Me", link = "https://twitter.com/lordgrilo"},
+  {icon = "skype", icon_pack = "fab", name = "Skype Me", link = "skype:kaltarien"},
+  {icon = "keybase", icon_pack = "fab", name = "Chat on Keybase", link = "https://keybase.io/lordgrilo"},
+  #{icon = "comments", icon_pack = "fas", name = "Discuss on Forum", link = "https://discourse.gohugo.io"},
   # {icon = "telegram", icon_pack = "fab", name = "Telegram Me", link = "https://telegram.me/@Telegram"},
   ]
 
@@ -117,10 +117,10 @@ contact_links = [
 ############################
 
 # Default image for social sharing and search engines. Place image in `static/img/` folder and specify image name here.
-sharing_image = ""
+sharing_image = "logo.png"
 
 # Twitter username (without @). Used when a visitor shares your site on Twitter.
-twitter = ""
+twitter = "lordgrilo"
 
 ############################
 ## Regional Settings
@@ -160,7 +160,9 @@ abstract_length = 135
 
 # Load JS plugins
 #   E.g. To load `/assets/js/custom.js`, set `plugins_js = ["custom"]`.
-plugins_js  = []
+plugins_css = ["particles", "parallax"]
+plugins_js  = ["particles"]
+
 
 # Avatars.
 # An avatar is an image that appears next to a user's name.
@@ -197,7 +199,7 @@ plugins_js  = []
   #   3: Card
   #   4: Citation (publications only)
   post_view = 2
-  publication_view = 2
+  publication_view = 4
   talk_view = 2
 
 ############################
@@ -275,4 +277,4 @@ plugins_js  = []
 ############################
 [cms]
   # See https://sourcethemes.com/academic/docs/install/#install-with-web-browser
-  netlify_cms = true
+  netlify_cms = false
